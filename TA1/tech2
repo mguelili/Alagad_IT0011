@@ -1,0 +1,13 @@
+digit_string = input("Enter a digits: ")
+
+
+
+sum_of_digits = 0
+
+
+for digit in digit_string:
+    if digit.isdigit():  # Ensure the character is a digit
+        sum_of_digits += int(digit)
+
+
+print("Sum of digits:", sum_of_digits)
