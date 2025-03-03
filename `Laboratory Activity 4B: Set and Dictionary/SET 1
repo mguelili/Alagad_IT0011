@@ -1,0 +1,29 @@
+A = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'}
+B = {'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'}
+C = {'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o'}
+
+elements_in_A_and_B = A & B
+print("Number of elements in A and B:", len(elements_in_A_and_B))
+
+
+elements_in_B_not_in_A_or_C = B - (A | C)
+print("Number of elements in B that are not in A and C:", len(elements_in_B_not_in_A_or_C))
+
+
+set_i = A & {'h', 'i', 'j', 'k'}
+print("Set i:", set_i)
+
+set_ii = A & {'c', 'd', 'f'}
+print("Set ii:", set_ii)
+
+set_iii = A & {'b', 'c', 'h'}
+print("Set iii:", set_iii)
+
+set_iv = A & {'d', 'f'}
+print("Set iv:", set_iv)
+
+set_v = A & {'c'}
+print("Set v:", set_v)
+
+set_vi = B & {'l', 'm', 'o'}
+print("Set vi:", set_vi)
