@@ -1,0 +1,10 @@
+usd_amount = float(input("How much dollar do you have? "))
+
+target_currency = input("What currency you want to have? ")
+
+conversion_rates = {
+  "PHP": 54.8147,  }
+converted_amount = usd_amount * conversion_rates.get(target_currency, 1)
+
+print(f"Dollar: {usd_amount} USD")
+print(f"{target_currency}: {converted_amount}")
